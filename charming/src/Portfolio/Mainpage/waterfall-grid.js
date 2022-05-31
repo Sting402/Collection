@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import Waterfall from "waterfalljs-layout/react";
+import "./waterfall-grid.css";
 
 
 
@@ -37,7 +38,7 @@ const customStyleGrid = `#react-waterfall-grid-comps li>div {
   width: 100%
 }`;
 
-export default function WaterfallGridDemo() {
+export default function WaterfallGrid() {
   const [images, setImages] = useState(defimages);
   const ulMaxHRef = useRef(0);
 
@@ -55,11 +56,11 @@ export default function WaterfallGridDemo() {
   return (
     <div className="mianbody">
       <Waterfall
+     
         mode="grid"
         el="#react-waterfall-grid-comps"
         columnWidth={300}
-        columnCount={4}
-        columnGap={24}
+        // columnCount={4}
         rowGap={24}
         customStyle={customStyleGrid}
         onChangeUlMaxH={(h) => (ulMaxHRef.current = h)}

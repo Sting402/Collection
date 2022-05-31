@@ -1,7 +1,13 @@
 import React from "react";
-import WaterfallGridDemo from "./waterfall-grid";
+import WaterfallGrid from "./Portfolio/Mainpage/waterfall-grid";
 import Footer from "./Home/Components/Footer/Footer";
 import LoginNav from "./Home/Components/LoginNav/LoginNav";
+// import PDetails from "./Portfolio/Detail/PDetails";
+import './App.css';
+
+//component
+import PhoneFooter from './Home/Components/PhoneFooter/PhoneFooter';
+// import Comments from "./Portfolio/Detail/Comments";
 
 export default function App() {
   return (
@@ -9,9 +15,12 @@ export default function App() {
       
       <div>
       <LoginNav/>
-       <h3>grid版本</h3>
-      <WaterfallGridDemo />
+
+      <WaterfallGrid />
+      {/* <App/> */}
+      {/* <PDetails /> */}
       <Footer />
+      <PhoneFooter />
       </div>
     </div>
   );

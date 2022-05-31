@@ -1,0 +1,19 @@
+.aside-nav{
+    float: right;
+    margin: 10px;
+    text-align: left;
+    position: sticky;
+    top: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    /* background-color: blueviolet; */
+}
+.h1{
+    padding:30px;
+}
+.cardtitle,.cardtext{
+    padding: 15px;
+}
+
+
