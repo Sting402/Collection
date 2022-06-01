@@ -31,7 +31,11 @@ export default function PDetails(){
       
         <h1 className='h1'>Portfolio</h1>
         
-      <Card.Img variant="top" src="https://picsum.photos/720/640/?random" />
+        <div>
+          <img src="https://picsum.photos/720/720/?random" alt="" width="640" height="960"></img>
+        </div>
+      {/* <Card.Img variant="top" src="https://picsum.photos/720/640/?random" /> */}
+      
       <div className='content'>
     <Card.Body>
       <Card.Title className='cardtitle'>Card Title</Card.Title>
@@ -41,13 +45,15 @@ export default function PDetails(){
     </Card.Text>
     </Card.Body>
     <Comments />
-    <br />
-    <br />
-    <br />
+    
     
   </div>
 </Card>
+<br />
+    <br />
+    <br />
 </Container>
+
 
 )
 

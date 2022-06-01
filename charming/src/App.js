@@ -1,8 +1,8 @@
 import React from "react";
-// import WaterfallGrid from "./Portfolio/Mainpage/waterfall-grid";
+// import WaterfallGrid from "./Portfolio/Pages/Mainpage/waterfall-grid";
 import Footer from "./Home/Components/Footer/Footer";
 import LoginNav from "./Home/Components/LoginNav/LoginNav";
-import PDetails from "./Portfolio/Pages/Detail/PDetails";
+// import PDetails from "./Portfolio/Pages/Detail/PDetails";
 import './App.css';
 
 //component
@@ -20,7 +20,7 @@ export default function App() {
       {/* <WaterfallGrid /> */}
       {/* <WaterfallPosition /> */}
       {/* <App/> */}
-      <PDetails />
+      {/* <PDetails /> */}
       <Footer />
       <PhoneFooter />
       </div>
