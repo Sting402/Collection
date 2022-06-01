@@ -1,12 +1,13 @@
 import React from "react";
-import WaterfallGrid from "./Portfolio/Mainpage/waterfall-grid";
+// import WaterfallGrid from "./Portfolio/Mainpage/waterfall-grid";
 import Footer from "./Home/Components/Footer/Footer";
 import LoginNav from "./Home/Components/LoginNav/LoginNav";
-// import PDetails from "./Portfolio/Detail/PDetails";
+import PDetails from "./Portfolio/Pages/Detail/PDetails";
 import './App.css';
 
 //component
 import PhoneFooter from './Home/Components/PhoneFooter/PhoneFooter';
+// import WaterfallPosition from "./Portfolio/Mainpage/waterfall-position";
 // import Comments from "./Portfolio/Detail/Comments";
 
 export default function App() {
@@ -16,9 +17,10 @@ export default function App() {
       <div>
       <LoginNav/>
 
-      <WaterfallGrid />
+      {/* <WaterfallGrid /> */}
+      {/* <WaterfallPosition /> */}
       {/* <App/> */}
-      {/* <PDetails /> */}
+      <PDetails />
       <Footer />
       <PhoneFooter />
       </div>

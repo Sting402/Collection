@@ -2,8 +2,6 @@ import React, { useState, useRef } from "react";
 import Waterfall from "waterfalljs-layout/react";
 import "./waterfall-grid.css";
 
-
-
 const defimages = [
   "https://picsum.photos/640/200/?random",
   "https://picsum.photos/360/640/?random",
@@ -17,8 +15,7 @@ const defimages = [
   "https://picsum.photos/720/640/?random"
 ];
 
-
-const customStyleGrid = `#react-waterfall-grid-comps li>div {
+const customStyle = `#react-waterfall-comps li>div {
   border-radius: 8px;
   font-size: 20px;
   overflow: hidden;
@@ -27,18 +24,18 @@ const customStyleGrid = `#react-waterfall-grid-comps li>div {
   padding: 6px;
   background: rgb(255, 255, 255);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.01s
+  transition: all 0.5s
 }
-#react-waterfall-grid-comps li>div:hover {
+#react-waterfall-comps li>div:hover {
   transform: translateY(-6px);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
   transition: all 0.3s
 }
-#react-waterfall-grid-comps li>div>img {
+#react-waterfall-comps li>div>img {
   width: 100%
 }`;
 
-export default function WaterfallGrid() {
+export default function WaterfallPosition() {
   const [images, setImages] = useState(defimages);
   const ulMaxHRef = useRef(0);
 
@@ -54,15 +51,21 @@ export default function WaterfallGrid() {
     setImages((prev) => [...prev, ...arr]);
   };
   return (
-    <div className="mianbody">
+    <div className="mainbody"
+      style={{
+        height: "600px",
+        width: "520px",
+        border: "1px solid",
+        marginTop: "30px",
+        overflowY: "scroll"
+      }}
+    >
       <Waterfall
-     
-        mode="grid"
-        el="#react-waterfall-grid-comps"
-        columnWidth={300}
-        // columnCount={4}
+        columnWidth={236}
+        columnCount={2}
+        columnGap={24}
         rowGap={24}
-        customStyle={customStyleGrid}
+        customStyle={customStyle}
         onChangeUlMaxH={(h) => (ulMaxHRef.current = h)}
       >
         {images.map((item, index) => {
@@ -74,7 +77,7 @@ export default function WaterfallGrid() {
               </div>
             </li>
           );
-        })} 
+        })}
       </Waterfall>
       <div style={{ textAlign: "center" }}>
         <button

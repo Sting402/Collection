@@ -1,5 +1,9 @@
 import React, { useState, useRef } from "react";
 import Waterfall from "waterfalljs-layout/react";
+import "./waterfall-grid.css";
+import { BsChevronDoubleDown } from "react-icons/bs";
+
+
 
 const defimages = [
   "https://picsum.photos/640/200/?random",
@@ -14,7 +18,8 @@ const defimages = [
   "https://picsum.photos/720/640/?random"
 ];
 
-const customStyle = `#react-waterfall-comps li>div {
+
+const customStyleGrid = `#react-waterfall-grid-comps li>div {
   border-radius: 8px;
   font-size: 20px;
   overflow: hidden;
@@ -23,18 +28,18 @@ const customStyle = `#react-waterfall-comps li>div {
   padding: 6px;
   background: rgb(255, 255, 255);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s
+  transition: all 0.01s
 }
-#react-waterfall-comps li>div:hover {
+#react-waterfall-grid-comps li>div:hover {
   transform: translateY(-6px);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
   transition: all 0.3s
 }
-#react-waterfall-comps li>div>img {
+#react-waterfall-grid-comps li>div>img {
   width: 100%
 }`;
 
-export default function WaterfallPositionDemo() {
+export default function WaterfallGrid() {
   const [images, setImages] = useState(defimages);
   const ulMaxHRef = useRef(0);
 
@@ -50,21 +55,15 @@ export default function WaterfallPositionDemo() {
     setImages((prev) => [...prev, ...arr]);
   };
   return (
-    <div
-      style={{
-        height: "600px",
-        width: "520px",
-        border: "1px solid",
-        marginTop: "30px",
-        overflowY: "scroll"
-      }}
-    >
+    <div className="mianbody">
       <Waterfall
-        columnWidth={236}
-        columnCount={2}
-        columnGap={24}
+     
+        mode="grid"
+        el="#react-waterfall-grid-comps"
+        columnWidth={300}
+        // columnCount={4}
         rowGap={24}
-        customStyle={customStyle}
+        customStyle={customStyleGrid}
         onChangeUlMaxH={(h) => (ulMaxHRef.current = h)}
       >
         {images.map((item, index) => {
@@ -76,14 +75,13 @@ export default function WaterfallPositionDemo() {
               </div>
             </li>
           );
-        })}
+        })} 
       </Waterfall>
-      <div style={{ textAlign: "center" }}>
-        <button
+      <div style={{ textAlign: "center"}}>
+        <button className="loadBtn"
           onClick={() => handleSearchImage()}
-          style={{ margin: "30px auto" }}
         >
-          LOAD MORE
+          <BsChevronDoubleDown />
         </button>
       </div>
     </div>
