@@ -1,9 +1,10 @@
 import React from "react";
-// import WaterfallGrid from "./Portfolio/Pages/Mainpage/waterfall-grid";
+import WaterfallGrid from "./Portfolio/Pages/Mainpage/waterfall-grid";
 import Footer from "./Home/Components/Footer/Footer";
 import LoginNav from "./Home/Components/LoginNav/LoginNav";
 // import PDetails from "./Portfolio/Pages/Detail/PDetails";
 import './App.css';
+// import AskPageOne from "./forum(Steven only)/Askpage/AskPage"
 
 //component
 import PhoneFooter from './Home/Components/PhoneFooter/PhoneFooter';
@@ -17,10 +18,11 @@ export default function App() {
       <div>
       <LoginNav/>
 
-      {/* <WaterfallGrid /> */}
+      <WaterfallGrid />
       {/* <WaterfallPosition /> */}
       {/* <App/> */}
       {/* <PDetails /> */}
+      {/* <AskPageOne /> */}
       <Footer />
       <PhoneFooter />
       </div>

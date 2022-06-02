@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Waterfall from "waterfalljs-layout/react";
 import "./waterfall-grid.css";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import "./test.css"
 
 
 
@@ -28,7 +29,13 @@ const customStyleGrid = `#react-waterfall-grid-comps li>div {
   padding: 6px;
   background: rgb(255, 255, 255);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.01s
+  transition: all 0.01s;
+
+
+}
+#react-waterfall-grid-comps li>{
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+
 }
 #react-waterfall-grid-comps li>div:hover {
   transform: translateY(-6px);
@@ -61,14 +68,14 @@ export default function WaterfallGrid() {
         mode="grid"
         el="#react-waterfall-grid-comps"
         columnWidth={300}
-        // columnCount={4}
+        columnCount= {7}
         rowGap={24}
         customStyle={customStyleGrid}
         onChangeUlMaxH={(h) => (ulMaxHRef.current = h)}
       >
         {images.map((item, index) => {
           return (
-            <li key={index} onClick={() => alert("图片地址为:" + item)}>
+            <li key={index} onClick={() => alert("圖片網址:" + item)}>
               <div>
                 {index + 1}
                 <img src={item} alt="" />

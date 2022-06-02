@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import style from "./LoginNav.module.css";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { BsCloudy, BsFillBellFill } from "react-icons/bs";
+import {  BsFillBellFill } from "react-icons/bs";
 import { FaShoppingCart, FaAngleDown } from "react-icons/fa";
 import { ImSearch } from "react-icons/im";
 import logo from "../../Assets/charming_logo.png";

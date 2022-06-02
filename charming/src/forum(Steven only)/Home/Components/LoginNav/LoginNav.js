@@ -1,11 +1,12 @@
 import React, {useState} from "react";
-import style from "./UnloginNav.module.css";
-import { AiOutlineGlobal } from 'react-icons/ai';
-import { FaAngleDown } from 'react-icons/fa';
-import { ImSearch } from 'react-icons/im'
+import style from "./LoginNav.module.css";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { BsCloudy, BsFillBellFill } from "react-icons/bs";
+import { FaShoppingCart, FaAngleDown } from "react-icons/fa";
+import { ImSearch } from "react-icons/im";
 import logo from "../../Assets/charming_logo.png";
 
-function UnloginNav(props){
+function LoginNav(props) {
   const [typebar,setNavbar] = useState(false);
   const displayItemType = () =>{
     if(window.scrollY >= 80){
@@ -17,17 +18,18 @@ function UnloginNav(props){
   window.addEventListener('scroll',displayItemType);
 
   return (
+    //固定住nav在下移的時候不動
     <header className={style.mainPage}>
       <nav className={style.navBar}>
-        logo 與charming文字 */}
+        {/* logo 與charming文字 */}
         <div className={style.charmingLogo}>
-          <a href="/UnloginHome" className={style.logoIcon}>
+          <a href="loginHome" className={style.logoIcon}>
             <img src={logo} alt="logo" />
             <p>柴米Charming</p>
           </a>
         </div>
 
-       <div className={style.searchBar}>
+        <div className={style.searchBar}>
           <input
             type="search"
             placeholder="Search.."
@@ -47,8 +49,9 @@ function UnloginNav(props){
           <ImSearch className={style.padSearchIcon} />
           <input type="search" className={style.padSearchBar}></input>
         </div>
+
         {/* -------選項------- */}
-       <div className={style.charmingItem}>
+        <div className={style.charmingItem}>
           <ul className={style.itemStyle}>
             <div>
               <li className={style.changeLanguage}>
@@ -59,27 +62,50 @@ function UnloginNav(props){
                 </select>
                 <FaAngleDown />
               </li>
-              <a href="/Portfolio" className={style.phoneDisplayNone}>
+              <a href="Portfolio" className={style.phoneDisplayNone}>
                 <li>柴米人</li>
               </a>
-              <a href="/Blog" className={style.phoneDisplayNone}>
+              <a href="Blog" className={style.phoneDisplayNone}>
                 <li>柴訊</li>
               </a>
-              <a href="/Communication" className={style.phoneDisplayNone}>
+              <a href="Communication" className={style.phoneDisplayNone}>
                 <li>柴社</li>
               </a>
             </div>
-            <a href="/signin">
-              <li className={style.loginButton}>登入</li>
-            </a>
-            <a href="/signup">
-              <li className={style.loginButton}>註冊</li>
-            </a>
+            {/* icon & 頭像 */}
+            <div>
+              <a href="ShoppingCar">
+                <li>
+                  <FaShoppingCart className={style.phoneIcon}/>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <BsFillBellFill className={style.phoneIcon}/>
+                </li>
+              </a>
+              <li className={style.showList}>
+                <a href="/account">
+                  <img src={logo} alt="logo" />
+                </a>
+                {/*--hover頭像時出現時才出現的會員表單 --*/}
+                <div className={style.navList}>
+                  <a href="">會員資料修改</a>
+                  <a href="">我的設計</a>
+                  <a href="/MyProduct">我的商品</a>
+                  <a href="/collection">我的收藏</a>
+                  <a href="/shoppinglist">購買清單</a>
+                  <a href="/UnloginHome">登出</a>
+                </div>
+                {/* ——————————————————————————————————————— */}
+              </li>
+            </div>
           </ul>
         </div>
       </nav>
 
-     <div className={typebar ? `${style.displayblock}` :`${style.displayNone}`}>
+      {/* ----往下滾動時滑時出現的種類選項----- */}
+      <div className={typebar ? `${style.displayblock}` :`${style.displayNone}`}>
         <hr/>
         <ul className={style.itemList}>
           <a href="">
@@ -102,5 +128,5 @@ function UnloginNav(props){
       </div>
     </header>
   );
-};
-export default UnloginNav;
+}
+export default LoginNav;
