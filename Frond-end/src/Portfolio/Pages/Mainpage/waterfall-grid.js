@@ -20,31 +20,6 @@ const defimages = [
 ];
 
 
-const customStyleGrid = `#react-waterfall-grid-comps li>div {
-  border-radius: 8px;
-  font-size: 20px;
-  overflow: hidden;
-  color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 20px;
-  padding: 6px;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.01s;
-
-
-}
-#react-waterfall-grid-comps li>{
-  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-
-}
-#react-waterfall-grid-comps li>div:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s
-}
-#react-waterfall-grid-comps li>div>img {
-  width: 100%
-}`;
 
 export default function WaterfallGrid() {
   const [images, setImages] = useState(defimages);
@@ -68,9 +43,9 @@ export default function WaterfallGrid() {
         mode="grid"
         el="#react-waterfall-grid-comps"
         columnWidth={300}
-        columnCount= {7}
+        // columnCount= {5}
         rowGap={24}
-        customStyle={customStyleGrid}
+        // customStyle={customStyleGrid}
         onChangeUlMaxH={(h) => (ulMaxHRef.current = h)}
       >
         {images.map((item, index) => {

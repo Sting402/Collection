@@ -69,18 +69,41 @@ body {
 
 }
 
+#react-waterfall-grid-comps li>div {
+    border-radius: 8px;
+    font-size: 20px;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    padding: 6px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.01s;
+  
+  
+  }
+  #react-waterfall-grid-comps li>div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s
+  }
+  #react-waterfall-grid-comps li>div>img {
+    width: 100%
+  };
+
 
 
 @media only screen and (min-width: 700px) {
-    .mainbody {
-        -moz-column-count: 3;
+    .mainbody{
+        /* -moz-column-count: 3;
         -webkit-column-count: 3;
-        column-count: 3;
+        column-count: 3; */
+        background-color: #472929;
     }
 }
 
 @media only screen and (min-width: 1100px) {
-    .mainbody {
+    #react-waterfall-grid-comps {
         -moz-column-count: 4;
         -webkit-column-count: 4;
         column-count: 4;

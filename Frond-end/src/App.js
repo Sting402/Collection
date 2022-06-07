@@ -4,14 +4,14 @@ import Footer from "./Home/Components/Footer/Footer";
 import LoginNav from "./Home/Components/LoginNav/LoginNav";
 // import PDetails from "./Portfolio/Pages/Detail/PDetails";
 import './App.css';
+// import Waterfall from "./waterfall/app";
 // import AskPageOne from "./forum(Steven only)/Askpage/AskPage"
 
 //component
 import PhoneFooter from './Home/Components/PhoneFooter/PhoneFooter';
-// import WaterfallPosition from "./Portfolio/Mainpage/waterfall-position";
 // import Comments from "./Portfolio/Detail/Comments";
 
-export default function App() {
+export default function App1() {
   return (
     <div style={{ display: "flex", justifyContent: "space-around" }}>
       
@@ -20,7 +20,7 @@ export default function App() {
 
       <WaterfallGrid />
       {/* <WaterfallPosition /> */}
-      {/* <App/> */}
+      {/* <Waterfall/> */}
       {/* <PDetails /> */}
       {/* <AskPageOne /> */}
       <Footer />
