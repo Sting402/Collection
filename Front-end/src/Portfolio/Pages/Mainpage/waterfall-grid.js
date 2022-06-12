@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import Waterfall from "waterfalljs-layout/react";
 import "./waterfall-grid.css";
 import { BsChevronDoubleDown } from "react-icons/bs";
-import "./test.css"
+// import "./test.css"
 import pic from "./pic"
 
 
