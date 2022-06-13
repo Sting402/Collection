@@ -1,13 +1,12 @@
-import React, { useState, useRef } from "react";
+import { React, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Waterfall from "waterfalljs-layout/react";
 import "./waterfall-grid.css";
 import { BsChevronDoubleDown } from "react-icons/bs";
-// import "./test.css"
-import pic from "./pic"
+import pic from "./pic";
+// import PDetails from "../Detail/PDetails"
 
-
-export default function WaterfallGrid() {
+function WaterfallGrid() {
   const [images, setImages] = useState(pic);
   const ulMaxHRef = useRef(0);
 
@@ -25,33 +24,39 @@ export default function WaterfallGrid() {
   return (
     <div className="mianbody">
       <Waterfall
-     
+        // className= "waterfall"
         mode="grid"
         el="#react-waterfall-grid-comps"
         columnWidth={300}
-        columnCount= {5}
+        columnCount={5}
         rowGap={24}
         // customStyle={customStyleGrid}
         onChangeUlMaxH={(h) => (ulMaxHRef.current = h)}
       >
         {images.map((item, index) => {
           return (
-            <li key={index} onClick={() => alert("圖片網址:" + item)}>
+            <li>
               <div>
                 {index + 1}
-                <img src={item} alt="" />
+                <Link to="/PDetails"> 
+                <img
+                  key={index}
+                  onClick={() => alert(index + 1)}
+                  src={item}
+                  alt=""
+                />
+                </Link>
               </div>
             </li>
           );
-        })} 
+        })}
       </Waterfall>
-      <div style={{ textAlign: "center"}}>
-        <button className="loadBtn"
-          onClick={() => handleSearchImage()}
-        >
+      <div style={{ textAlign: "center" }}>
+        <button className="loadBtn" onClick={() => handleSearchImage()}>
           <BsChevronDoubleDown />
         </button>
       </div>
     </div>
   );
 }
+export default WaterfallGrid

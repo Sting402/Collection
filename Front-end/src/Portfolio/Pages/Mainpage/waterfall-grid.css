@@ -94,7 +94,8 @@ body {
 
 
 @media only screen and (min-width: 700px) {
-    .mainbody{
+    #react-waterfall-grid-comps
+    {
         /* -moz-column-count: 3;
         -webkit-column-count: 3;
         column-count: 3; */

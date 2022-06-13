@@ -1,9 +1,7 @@
 import React from "react";
-import WaterfallGrid from "./Portfolio/Pages/Mainpage/waterfall-grid";
 import Footer from "./Home/Components/Footer/Footer";
-import './App.css';
-import {Routes, Route,Link, Router} from "react-router-dom";
-
+import "./App.css";
+import { Route, Routes,  } from "react-router-dom";
 
 //component
 import LoginNav from "./Home/Components/LoginNav/LoginNav";
@@ -11,33 +9,19 @@ import LoginNav from "./Home/Components/LoginNav/LoginNav";
 // import Comments from "./Portfolio/Detail/Comments";
 
 //Pages
+import WaterfallGrid from "./Portfolio/Pages/Mainpage/waterfallgrid";
 import PDetails from "./Portfolio/Pages/Detail/PDetails";
+// import PDetails from "./Portfolio/Pages/Detail/PDetails";
 
-
-export default function App1() {
+export default function App() {
   return (
-    <div style={{ display: "flex", justifyContent: "space-around" }}>
-      
-
-
     <div>
     <LoginNav/>
-    <Router>
-    <Routes>
-    <Route path="/WaterfallGrid" element= {<WaterfallGrid />}/>
-    <Route path="/PDetails" element= {<PDetails />}/>
-
-    </Routes>
-    </Router>
-    <Footer />
-    </div>
-
-
-
-      {/* <WaterfallGrid /> */}
-      {/* <PDetails /> */}
-      {/* <AskPageOne /> */}
-      {/* <PhoneFooter /> */} 
-      {/* </div> */}
-    </div>
-  )}
+       <Routes>
+          <Route path="/" element={<WaterfallGrid />} />
+          <Route path="/PDetails" element={<PDetails />} />
+        </Routes>
+        <Footer />
+      </div>
+    )
+}
