@@ -29,7 +29,7 @@ class Form extends React.Component{
                     </div>
                     <div className="col-sm-2">
                     <br />
-                <button type="button" className="btn btn-primary" 
+                <button type="button" className="btn" 
                 onClick={this.add.bind(this)}>留言</button>
                     
                     </div>

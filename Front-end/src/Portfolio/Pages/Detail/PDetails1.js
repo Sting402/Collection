@@ -2,11 +2,10 @@ import React from 'react';
 import { Container, Card,ListGroup } from 'react-bootstrap';
 import Comments from './Comments';
 import './PDetails.css';
+
 import  BasicBreadcrumbs  from "../Breadcrumb/breadcrumb"
-import { Link } from "react-router-dom";
 
-
-export default function PDetails(){
+export default function PDetails1(){
     return(
       
     <Container>
@@ -18,10 +17,8 @@ export default function PDetails(){
       <ListGroup variant="flush">
       <h2 className='h1'>相似作品</h2>
       <ListGroup.Item>
-      <Link to ="/PDetails1">
       <Card.Img variant="top" src=    "https://images.unsplash.com/photo-1654709289319-40c2dc2e6d05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=60"
       />
-      </Link>
       </ListGroup.Item>
       
       <ListGroup.Item><Card.Img variant="top" src="https://images.unsplash.com/photo-1590615368879-b1729dcab779?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTZ8RnlxRk9rNmI1RGt8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" /></ListGroup.Item>

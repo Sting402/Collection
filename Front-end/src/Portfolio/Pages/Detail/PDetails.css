@@ -1,7 +1,5 @@
 .container{
-    padding-left: 20%;
-    width: 1440px;
-    height: auto;
+    width: 1000px;
 }
 .aside-nav{
     float: right;
@@ -12,10 +10,13 @@
     display: flex;
     justify-content: center;
     align-items: right;
-    /* background-color: blueviolet; */
+    /* background-color: rgba(121, 82, 82, 0.8); */
 }
 .h1{
     padding:30px;
+    color: rgba(121, 82, 82, 1);
+    text-align: left;
+    text-decoration: solid underline;
 }
 
 .cardtitle,.cardtext{
@@ -23,19 +24,19 @@
 }
 
 .card-img-top{
-    height: 100px;
+    height: 150px;
     width: 200px;
 }
 
 .content{
     display: flex;
-          max-width: 642px;
+          max-width: 640px;
           height: 300.8050842285156px;
           border-radius: 15px;
-          border-color: rgba(121, 82, 82, 1);
+          border-color: solid 2px rgba(121, 82, 82, 0.9);
           border-width: 1px;
           border-style: solid;
-          background-color: rgba(244, 239, 239, 1);
+          background-color: rgba(121, 82, 82, 0.9);
 
 }
 .comments{

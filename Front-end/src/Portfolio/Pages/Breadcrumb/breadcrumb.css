@@ -1,0 +1,29 @@
+.breadcrumb{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 417px;
+height: 31px;
+left: 104px;
+top: 227px;
+}
+.nav-link{
+    text-decoration: solid;
+    font-size: large;
+    color: #795252;
+
+width: 25px;
+height: 25px;
+}
+
+/* position: absolute;
+left: 0%;
+right: -0.01%;
+top: 11.12%;
+bottom: 11.11%; */
+
+
+

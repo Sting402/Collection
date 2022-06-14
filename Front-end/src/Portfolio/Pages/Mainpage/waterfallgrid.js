@@ -4,7 +4,7 @@ import Waterfall from "waterfalljs-layout/react";
 import "./waterfall-grid.css";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import pic from "./pic";
-// import PDetails from "../Detail/PDetails"
+import introduce1 from "../../../Home/Assets/charmingMan.png";
 
 function WaterfallGrid() {
   const [images, setImages] = useState(pic);
@@ -23,8 +23,9 @@ function WaterfallGrid() {
   };
   return (
     <div className="mianbody">
+      <img className="introduce"src={introduce1} alt="introduce" />
       <Waterfall
-        // className= "waterfall"
+        className="waterfall"
         mode="grid"
         el="#react-waterfall-grid-comps"
         columnWidth={300}
@@ -37,15 +38,13 @@ function WaterfallGrid() {
           return (
             <li>
               <div>
-                {index + 1}
-                <Link to="/PDetails"> 
-                <img
+              <Link to="/PDetails"> 
+                <img className="img"
                   key={index}
-                  onClick={() => alert(index + 1)}
                   src={item}
-                  alt=""
+                  alt="/PDetails"
                 />
-                </Link>
+              </Link>
               </div>
             </li>
           );
@@ -59,4 +58,4 @@ function WaterfallGrid() {
     </div>
   );
 }
-export default WaterfallGrid
+export default WaterfallGrid;

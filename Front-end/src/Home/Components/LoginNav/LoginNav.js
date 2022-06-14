@@ -29,7 +29,7 @@ function LoginNav(props) {
           </a>
         </div>
 
-        <div className={style.searchBar}>
+        {/* <div className={style.searchBar}>
           <input
             type="search"
             placeholder="Search.."
@@ -45,11 +45,11 @@ function LoginNav(props) {
         </div>
 
         {/* 平版版搜尋 */}
-        <div className={style.padSearch}>
+        {/* <div className={style.padSearch}>
           <ImSearch className={style.padSearchIcon} />
           <input type="search" className={style.padSearchBar}></input>
-        </div>
-
+        </div> */}
+ 
         {/* -------選項------- */}
         <div className={style.charmingItem}>
           <ul className={style.itemStyle}>

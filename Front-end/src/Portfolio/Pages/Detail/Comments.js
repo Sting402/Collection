@@ -1,6 +1,7 @@
 import React from 'react';
 import List from './List';
 import Form from './Form';
+import "./com.css";
 class Comments extends React.Component{
     constructor(props){
     
@@ -36,15 +37,11 @@ class Comments extends React.Component{
     }
     render(){
         return (
-            <div className="container">
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+            <div className="com">
+                
                 <div className="panel panel-default">
-                    <div className="panel-headingbg-danger">
                       <h1 className="text-center ">留言區</h1>
-                      
+                      <hr/>
                       <br/>
                     </div>
                     <div className="panel-body">
@@ -53,7 +50,6 @@ class Comments extends React.Component{
                       <Form addItem={this.addItem}/>
                     </div>
                 </div> 
-            </div>
           
         );
     }
