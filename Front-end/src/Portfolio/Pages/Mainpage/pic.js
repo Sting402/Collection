@@ -35,16 +35,7 @@ const pic = [
     "https://images.unsplash.com/photo-1654613907442-7419affeedbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNzl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
     "https://images.unsplash.com/photo-1654447398843-f8a74d6f2c78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMDB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
     "https://images.unsplash.com/photo-1654616111851-5394318e3279?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMjF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1654553255974-7f705f47be8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60","https://picsum.photos/640/200/?random",
-    "https://picsum.photos/360/640/?random",
-    "https://picsum.photos/480/720/?random",
-    "https://picsum.photos/480/640/?random",
-    "https://picsum.photos/360/?random",
-    "https://picsum.photos/360/520/?random",
-    "https://picsum.photos/520/360/?random",
-    "https://picsum.photos/520/360/?random",
-    "https://picsum.photos/520/360/?random",
-    "https://picsum.photos/720/640/?random"
+    "https://images.unsplash.com/photo-1654553255974-7f705f47be8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
   ];
 
 export default pic

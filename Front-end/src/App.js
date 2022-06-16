@@ -4,7 +4,7 @@ import "./App.css";
 import { Route, Routes,  } from "react-router-dom";
 
 //component
-import LoginNav from "./Home/Components/LoginNav/LoginNav";
+import LoginNav from "./Home/Components/loginNav/LoginNav";
 // import PhoneFooter from './Home/Components/PhoneFooter/PhoneFooter';
 // import Comments from "./Portfolio/Detail/Comments";
 

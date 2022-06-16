@@ -11,12 +11,6 @@ class List extends React.Component{
         
         return (
             <table className="table table-striped">
-                <thead>
-                    <tr>
-                        <th>留言板</th>
-                        <br/>
-                    </tr>
-                </thead>
                 <tbody>
                     {todoItems}
                 </tbody>

@@ -5,11 +5,11 @@ class Form extends React.Component{
     }
     add(event){
         
-        if(event.type=="keyup"&&event.keyCode!=13){
+        if(event.type==="keyup"&&event.keyCode!==13){
             return false;
         }
         let txt=this.refs.txt.value;
-        if(txt=="") return false;
+        if(txt==="") return false;
         
         this.props.addItem(txt);
         this.refs.txt.value="";
@@ -25,7 +25,7 @@ class Form extends React.Component{
                         className="form-control" 
                         onKeyUp={this.add.bind(this)} 
                         id="exampleInputName2" 
-                        placeholder="添加新留言"/>
+                        placeholder="添加留言"/>
                     </div>
                     <div className="col-sm-2">
                     <br />

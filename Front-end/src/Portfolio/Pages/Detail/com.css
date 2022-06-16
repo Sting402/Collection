@@ -1,7 +1,20 @@
 .com{
     background-color: rgba(121, 82, 82, 0.5);
-    border: solid rgba(121, 82, 82, 1);
+    border: solid rgba(121, 82, 82, 0.3);
     border-radius: 15px;
     padding-bottom: 30px;
     padding-left: 15px;
+    width: 680px;
+    color: rgba(121, 82, 82, 1);
 }
+.btn{
+    border-radius: 15px;
+    border: solid rgba(121, 82, 82, 0.3);
+    background-color: rgba(121, 82, 82, 0.7);
+    display: flex;
+    padding: 3px;
+}
+/* .form-control{
+    background-color: rgba(121, 82, 82, 0.05);
+
+} */

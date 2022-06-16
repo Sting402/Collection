@@ -6,10 +6,11 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 import pic from "./pic";
 import introduce1 from "../../../Home/Assets/charmingMan.png";
 
+//設定圖片與高度
 function WaterfallGrid() {
   const [images, setImages] = useState(pic);
   const ulMaxHRef = useRef(0);
-
+//
   const handleSearchImage = async () => {
     function random(min, max) {
       return min + Math.floor(Math.random() * (max - min + 1));
@@ -28,9 +29,9 @@ function WaterfallGrid() {
         className="waterfall"
         mode="grid"
         el="#react-waterfall-grid-comps"
-        columnWidth={300}
-        columnCount={5}
-        rowGap={24}
+        columnWidth={350}
+        columnCount={4}
+        rowGap={20}
         // customStyle={customStyleGrid}
         onChangeUlMaxH={(h) => (ulMaxHRef.current = h)}
       >

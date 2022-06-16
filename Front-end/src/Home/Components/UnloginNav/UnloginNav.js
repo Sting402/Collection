@@ -19,7 +19,6 @@ function UnloginNav(props){
   return (
     <header className={style.mainPage}>
       <nav className={style.navBar}>
-        logo 與charming文字 */}
         <div className={style.charmingLogo}>
           <a href="/UnloginHome" className={style.logoIcon}>
             <img src={logo} alt="logo" />

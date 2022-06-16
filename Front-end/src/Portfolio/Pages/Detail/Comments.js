@@ -16,7 +16,7 @@ class Comments extends React.Component{
     }
     deleteItem(id){
         let newtodos=this.state.todos.filter((item)=>{
-            return !(item.id==id)
+            return !(item.id===id)
         });
           this.setState({
             todos:newtodos

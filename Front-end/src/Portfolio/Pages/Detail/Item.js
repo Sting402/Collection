@@ -5,7 +5,7 @@ class Item extends React.Component{
         this.props.deleteItem(this.props.data.id);
     }
     render(){
-        let {text,time,done,id}=this.props.data;
+        let {text,time}=this.props.data;
         return (
            <tr>
                <td>{time}<br/><br/>{text}</td>
