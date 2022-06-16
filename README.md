@@ -45,7 +45,9 @@
 - Pug
 - Typescript
 
-[https://github-readme-stats.vercel.app/api/top-langs/?username=Sting402&langs_count=10&layout=compact](https://github-readme-stats.vercel.app/api/top-langs/?username=Sting402&langs_count=10&layout=compact)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
 
 ## [功能介紹](Readme%20md%2076ec9d5506fe45689bc2805dd5ffb424.md)
 
@@ -63,8 +65,7 @@
 
 ## [作品集分支數據](Readme%20md%2076ec9d5506fe45689bc2805dd5ffb424.md)
 
-[https://github-readme-stats.vercel.app/api?username=Sting402&show_icons=true&theme=onedark](https://github-readme-stats.vercel.app/api?username=Sting402&show_icons=true&theme=onedark)
-
+![Steven's GitHub stats](https://github-readme-stats.vercel.app/api?username=Sting402&theme=dark&show_icons=true)
 ## **Source**
 
 ```
