@@ -143,7 +143,7 @@ function LoginNav(props) {
                 <FaAngleDown />
               </li> */}
               <div className={style.hello}>
-                <p> Hello! Josh0616</p>
+                <p> Hello! Josh Chen</p>
                 <a href="/membercenter/account">
                   <p>{localStorage.getItem('name')}</p>
                 </a>
